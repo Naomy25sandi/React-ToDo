@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
 const Tarea = ({titulo,eliminar,completar})=>{
+
     return(
-        <>
-        <h3>{titulo}</h3>
+        <div className="contiene-tarea">
+       <input type="checkbox"  checked={completar}/>
+        <p>{titulo}</p>
         <button onClick={eliminar}>Eliminar</button>
-        <input type="checkbox"/>
-        </>
+       
+        </div>
     )
 }
 export default Tarea
