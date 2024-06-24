@@ -6,7 +6,7 @@ function ContenedorTarea({mostrarTareas}) {
     async function eliminar() {
         await deleteData(tarea.id)
     }
-
+console.log("CAMBIO");
 
     return (
         <div className="task-List">
